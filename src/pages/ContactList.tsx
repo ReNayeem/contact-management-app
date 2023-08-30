@@ -25,7 +25,7 @@ function ContactList() {
                     <h3 className='mt-2'>Name: <span>{contact.firstName} {contact.lastName}</span></h3>
 
                     <h3>Status: <span>{contact.isActive ? 'Active' : 'Inactive'}</span></h3>
-                    <Link to={`/contact/${contact.id}`}><Button className='m-2'>Details</Button></Link>
+                    <Link to={`/contact/${contact.id}`}><Button className='m-2'>Edit</Button></Link>
                     <Button className='bg-red-800 m-2' onClick={() => handleDelete(contact.id)}>Delete</Button>
                 </div>
             ))}
