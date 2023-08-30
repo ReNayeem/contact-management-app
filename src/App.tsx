@@ -6,6 +6,7 @@ import Home from './pages/ContactList';
 import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
 import { DefaultSidebar } from './components/sidebar';
 import { ThemeProvider } from "@material-tailwind/react";
+import ContactDetailsPage from './pages/ContactDetailsPage';
 
 const queryClient = new QueryClient()
 
@@ -19,6 +20,7 @@ function App() {
             <DefaultSidebar />
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/contact/:id" element={<ContactDetailsPage />} />
             </Routes>
           </BrowserRouter>
         </ThemeProvider>

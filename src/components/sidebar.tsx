@@ -21,9 +21,11 @@ export function DefaultSidebar() {
                 </Typography>
             </div>
             <List>
-                <ListItem>
-                    <Link to='/'>Contact</Link>
-                </ListItem>
+                <Link to="/">
+                    <ListItem>
+                        Contact
+                    </ListItem>
+                </Link>
                 <ListItem>
                     Charts and Maps
                 </ListItem>
