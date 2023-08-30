@@ -2,20 +2,16 @@
 
 export interface Contact {
     id: number;
-    name: string;
-    email: string;
-    phone: string;
-    address: string;
+    firstName: string;
+    lastName: string;
     isActive: boolean;
 }
 
 let contacts: Contact[] = [
     {
         id: 1,
-        name: 'John Doe',
-        email: 'john@example.com',
-        phone: '123-456-7890',
-        address: '123 Main St, City',
+        firstName: 'John Doe',
+        lastName: 'Doe',
         isActive: true,
     },
     // Add more contacts
