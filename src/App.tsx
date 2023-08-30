@@ -8,6 +8,7 @@ import { DefaultSidebar } from './components/sidebar';
 import { ThemeProvider } from "@material-tailwind/react";
 import ContactDetailsPage from './pages/ContactDetailsPage';
 import NewContact from './pages/ContactForm';
+import Charts from './pages/Charts';
 
 const queryClient = new QueryClient()
 
@@ -23,6 +24,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/contact/:id" element={<ContactDetailsPage />} />
               <Route path="/new-contact" element={<NewContact />} />
+              <Route path="/charts-and-maps" element={<Charts />} />
             </Routes>
           </BrowserRouter>
         </ThemeProvider>

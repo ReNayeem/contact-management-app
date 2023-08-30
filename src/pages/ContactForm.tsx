@@ -40,7 +40,7 @@ function ContactForm({ contactToUpdate }: { contactToUpdate?: Contact }) {
     };
 
     return (
-        <form onSubmit={handleSubmit} className='contact-form flex flex-col items-center min-h-screen justify-center'>
+        <form onSubmit={handleSubmit} className='custom-margin flex flex-col items-center min-h-screen justify-center'>
             <p className='text-xl'>Add new contact</p>
             <input placeholder='first name' className='w-96 mt-2 border border-black rounded-md p-2' type="text" value={firstName} onChange={(e) => setName(e.target.value)} />
             <input placeholder='last name' type="text" className='w-96 my-2 border border-black rounded-md p-2' value={lastName} onChange={(e) => setEmail(e.target.value)} />

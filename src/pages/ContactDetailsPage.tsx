@@ -59,7 +59,7 @@ function ContactDetailsPage() {
     };
 
     return (
-        <div className='contact-details flex flex-col items-center min-h-screen justify-center'>
+        <div className='custom-margin flex flex-col items-center min-h-screen justify-center'>
 
             <h2 className='text-xl mb-2 underline underline-offset-1'>Contact Details</h2>
             <p>

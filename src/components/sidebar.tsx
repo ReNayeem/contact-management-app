@@ -26,9 +26,11 @@ export function DefaultSidebar() {
                         Contact
                     </ListItem>
                 </Link>
-                <ListItem>
-                    Charts and Maps
-                </ListItem>
+                <Link to="/charts-and-maps">
+                    <ListItem>
+                        Charts and Maps
+                    </ListItem>
+                </Link>
             </List>
         </Card>
     );

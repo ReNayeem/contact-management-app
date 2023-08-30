@@ -19,7 +19,7 @@ function ContactList() {
     };
 
     return (
-        <div className='contact-list flex flex-col items-center min-h-screen justify-center'>
+        <div className='custom-margin flex flex-col items-center min-h-screen justify-center'>
             {contacts?.map((contact) => (
                 <div key={contact.id} className='border border-black rounded-md p-2 mt-4'>
                     <h3 className='mt-2'>Name: <span>{contact.firstName} {contact.lastName}</span></h3>
