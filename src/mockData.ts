@@ -10,8 +10,8 @@ export interface Contact {
 let contacts: Contact[] = [
     {
         id: 1,
-        firstName: 'John Doe',
-        lastName: 'Doe',
+        firstName: 'Md.',
+        lastName: 'Nayeem',
         isActive: true,
     },
     // Add more contacts
