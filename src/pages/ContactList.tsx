@@ -21,7 +21,7 @@ function ContactList() {
     return (
         <div className='contact-list flex flex-col items-center min-h-screen justify-center'>
             {contacts?.map((contact) => (
-                <div key={contact.id} className='border border-black rounded-md p-2 my-4'>
+                <div key={contact.id} className='border border-black rounded-md p-2 mt-4'>
                     <h3 className='mt-2'>Name: <span>{contact.firstName} {contact.lastName}</span></h3>
 
                     <h3>Status: <span>{contact.isActive ? 'Active' : 'Inactive'}</span></h3>
@@ -29,7 +29,7 @@ function ContactList() {
                     <Button className='bg-red-800 m-2' onClick={() => handleDelete(contact.id)}>Delete</Button>
                 </div>
             ))}
-            <Link to='/a'><Button className='bg-green-900'>add new contact</Button></Link>
+            <Link to='/new-contact'><Button className='bg-green-900 mt-4'>add new contact</Button></Link>
         </div>
     );
 }
