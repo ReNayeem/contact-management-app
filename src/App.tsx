@@ -16,13 +16,13 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <ThemeProvider>
           <BrowserRouter>
+            <DefaultSidebar />
             <Routes>
               <Route path="/" element={<Home />} />
             </Routes>
           </BrowserRouter>
         </ThemeProvider>
       </QueryClientProvider>
-      <DefaultSidebar />
     </div>
   );
 }
